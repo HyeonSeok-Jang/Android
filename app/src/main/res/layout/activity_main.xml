@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:background="@drawable/roundbutton"
+        android:onClick="addn"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="plus"
+        app:layout_constraintBottom_toTopOf="@+id/multi"
+        app:layout_constraintEnd_toStartOf="@+id/divi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/roundbutton"
+        android:onClick="minusn"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="minus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/multi" />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/roundbutton"
+        android:onClick="multin"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="multi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/divi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="68dp"
+        android:background="@drawable/roundbutton"
+        android:onClick="divin"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="divi"
+        app:layout_constraintBottom_toTopOf="@+id/minus"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <EditText
+        android:id="@+id/aa"
+        android:layout_width="376dp"
+        android:layout_height="127dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="a"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bb"
+        android:layout_width="369dp"
+        android:layout_height="115dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="314dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="328dp"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text=" "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bb"
+        app:layout_constraintVertical_bias="0.659" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="162dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="346dp"
+        app:layout_constraintBottom_toBottomOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fire_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
